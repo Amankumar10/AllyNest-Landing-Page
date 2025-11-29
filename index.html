@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AllyNest</title>
-  <link rel="stylesheet" href="allynest.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="allynest.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <!-- Header / Navbar -->
   <header class="navbar">
     <div class="logo">AllyNest</div>
-    
+
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">
-      &#9776; </button>
+      &#9776;
+    </button>
 
-    <ul class="nav-links" id="nav-list"> 
+    <ul class="nav-links" id="nav-list">
       <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#technologies">Technologies</a></li>
+      
+      <!-- <li><a href="#ethics">Ethics</a></li> -->
+      <li><a href="#brand-guide">Brand Guide</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact">bittu</a></li>
-
     </ul>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <!-- AI Robot Heads -->
+    <!-- Floating AI Robot Heads -->
     <div class="robot robot1">
       <svg width="100" height="120" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -43,7 +43,7 @@
         <line x1="32" y1="0" x2="32" y2="10" stroke="#0047ab" stroke-width="2"/>
       </svg>
     </div>
-  
+
     <div class="robot robot2">
       <svg width="80" height="100" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="15" y="15" width="34" height="50" rx="8" ry="8" fill="#3399ff" stroke="#0047ab" stroke-width="2"/>
@@ -52,7 +52,7 @@
         <rect x="25" y="50" width="14" height="3" rx="1.5" fill="#00e5ff"/>
       </svg>
     </div>
-  
+
     <div class="robot robot3">
       <svg width="120" height="140" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="10" y="5" width="44" height="70" rx="12" ry="12" fill="#00aaff" stroke="#0047ab" stroke-width="2"/>
@@ -62,7 +62,7 @@
         <line x1="32" y1="0" x2="32" y2="8" stroke="#0047ab" stroke-width="2"/>
       </svg>
     </div>
-  
+
     <div class="robot robot4">
       <svg width="70" height="90" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="15" y="10" width="34" height="55" rx="10" ry="10" fill="#0066cc" stroke="#0047ab" stroke-width="2"/>
@@ -71,7 +71,7 @@
         <rect x="25" y="45" width="14" height="3" rx="1.5" fill="#00e5ff"/>
       </svg>
     </div>
-  
+
     <div class="robot robot5">
       <svg width="90" height="110" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="12" y="8" width="40" height="60" rx="10" ry="10" fill="#0099ff" stroke="#0047ab" stroke-width="2"/>
@@ -81,7 +81,7 @@
         <line x1="32" y1="0" x2="32" y2="8" stroke="#0047ab" stroke-width="2"/>
       </svg>
     </div>
-  
+
     <div class="robot robot6">
       <svg width="60" height="80" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="17" y="12" width="30" height="55" rx="8" ry="8" fill="#0047ab" stroke="#003366" stroke-width="2"/>
@@ -90,11 +90,11 @@
         <rect x="25" y="45" width="14" height="3" rx="1.5" fill="#00e5ff"/>
       </svg>
     </div>
-  
+
     <!-- Hero Text -->
     <div class="hero-content">
       <h1>Innovating the Future</h1>
-      <p>Building next-generation technology solutions for your business</p>
+      <p>Building human-centered AI and technology that understands, supports, and helps people grow.</p>
       <a href="#contact" class="hero-btn">Get in Touch</a>
     </div>
   </section>
@@ -102,51 +102,211 @@
   <!-- About Section -->
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>AllyNest Solutions is a leading technology company specializing in software development, cloud solutions, and AI-powered applications. We help businesses innovate and scale efficiently.</p>
-    <p>Founded in 2015, our mission is to bridge technology and business growth by delivering state-of-the-art solutions that transform industries.</p>
+    <p>
+      AllyNest Technologies is a people-focused AI product based company blending psychology research with innovative technology to help individuals feel connected, safe, and genuinely understood.
+    </p>
+    <p>
+      We believe technology should do more than solve problems — it should recognize emotions, build trust, and enhance human well-being. Every experience, system, and product we create is designed with empathy, science, and meaningful purpose.
+    </p>
   </section>
 
-  <!-- Services Section -->
-  <section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <div class="icon">💻</div>
-        <h3>Software Development</h3>
-        <p>Custom software solutions tailored to your business needs.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">☁</div>
-        <h3>Cloud Solutions</h3>
-        <p>Scalable and secure cloud architecture for modern businesses.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">🤖</div>
-        <h3>AI & Machine Learning</h3>
-        <p>AI-powered systems to automate, predict, and optimize your processes.</p>
+
+
+
+  <!-- Brand Guide Section -->
+  <section class="section section-alt" id="brand-guide">
+    <h2>📘 AllyNest — Brand Guide</h2>
+
+    <!-- Brand Essence -->
+    <div class="brand-block">
+      <h3>1. Brand Essence</h3>
+ 
+            AllyNest is where technology meets care. We create digital experiences that don’t just function — they understand, support, and connect.
+          </p>
+          <p>
+            With a foundation in psychology and a commitment to emotional intelligence, our work proves that technology can be both intelligent and deeply human.
+          </p>
+          <p>
+            Beyond understanding, AllyNest helps people grow. We design technology that gently supports self-awareness, emotional resilience, healthy connection, and personal development — always to empower, never to replace, the human journey.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Technologies Section -->
-  <section class="section" id="technologies">
-    <h2>Technologies We Use</h2>
-    <div class="tech-grid">
-      <div class="tech-item">Python</div>
-      <div class="tech-item">JavaScript</div>
-      <div class="tech-item">React</div>
-      <div class="tech-item">Node.js</div>
-      <div class="tech-item">AWS</div>
-      <div class="tech-item">Docker</div>
+    <!-- About AllyNest (Brand View) -->
+    <div class="brand-block">
+      <h3>2. About AllyNest</h3>
+      <p>
+        AllyNest is a people-focused AI company blending psychology research with innovative technology to help individuals feel connected, safe, and genuinely understood.
+      </p>
+      <p>
+        We believe technology should do more than solve problems — it should recognize emotions, build trust, and enhance human well-being. We make technology that helps people feel safe, grow as individuals, and build healthy connections with others.
+      </p>
+      <p>
+        Every experience, system, and product we create is designed with empathy, science, and meaningful purpose.
+      </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="brand-block">
+      <h3>3. Mission</h3>
+      <p>
+        To build technology that truly understands people — how they think, feel, and connect — and to use that understanding to support emotional well-being, growth, meaningful relationships, and personal safety.
+      </p>
+      <h4 class="inline-heading">How We Make This Real</h4>
+      <ul class="pillars-list">
+        <li>Helps you build emotionally aligned relationships in love, friendship, and self-growth.</li>
+        <li>Combines ancient wisdom, emotional intelligence, and AI to guide conscious, meaningful connections.</li>
+        <li>Provides guided conversations, goals, and daily support to improve communication, self-awareness, and personal growth.</li>
+        <li>Creates AI systems that can sense behavior and emotion to improve safety in homes and workplaces.</li>
+      </ul>
+      <p class="highlight-text">
+        We envision a future where technology doesn’t just get smarter — it becomes kinder, more supportive, and more human.
+      </p>
+    </div>
+
+    <!-- Brand Values -->
+    <div class="brand-block">
+      <h3>4. Brand Values</h3>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>Empathy</h4>
+          <p>We build technology that sees and responds to emotional needs.</p>
+        </div>
+        <div class="value-card">
+          <h4>Evidence-Led</h4>
+          <p>Our design is grounded in psychology, behavioral science, and validated research.</p>
+        </div>
+        <div class="value-card">
+          <h4>Personal Growth</h4>
+          <p>We help people understand themselves, build resilience, and grow toward who they want to become.</p>
+        </div>
+        <div class="value-card">
+          <h4>Trust</h4>
+          <p>Privacy, emotional safety, and reliability are non-negotiable.</p>
+        </div>
+        <div class="value-card">
+          <h4>Honest Communication</h4>
+          <p>We speak clearly, respectfully, and without unnecessary complexity.</p>
+        </div>
+        <div class="value-card">
+          <h4>Human-First Design</h4>
+          <p>Technology adapts to people — not the other way around.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tone of Voice -->
+    <div class="brand-block">
+      <h3>6. Tone of Voice</h3>
+      <p class="tone-personality">
+        Personality: <strong>Supportive • Calm • Wise • Caring • Steady • Growth-Oriented</strong>
+      </p>
+      <div class="brand-subgrid">
+        <div class="brand-card">
+          <h4>We Say</h4>
+          <ul class="quote-list">
+            <li>“You’re not alone here.”</li>
+            <li>“Growth takes time — and we’re here with you through it.”</li>
+            <li>“Our technology listens, learns, and responds with care.”</li>
+            <li>“Small steps create meaningful change.”</li>
+          </ul>
+        </div>
+        <div class="brand-card">
+          <h4>We Avoid</h4>
+          <ul class="avoid-list">
+            <li>Cold or clinical language</li>
+            <li>Overly technical explanations</li>
+            <li>High-energy, hype-based marketing tone</li>
+            <li>Language that pressures or rushes personal development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messaging Pillars -->
+    <div class="brand-block">
+      <h3>8. Messaging Pillars</h3>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <p>Support isn’t a feature — it’s the foundation.</p>
+        </div>
+        <div class="pillar-card">
+          <p>Technology should understand, not overwhelm.</p>
+        </div>
+        <div class="pillar-card">
+          <p>Connection is how we heal, grow, and thrive.</p>
+        </div>
+        <div class="pillar-card">
+          <p>Growth happens when we feel seen, supported, and safe.</p>
+        </div>
+      </div>
+      <p class="highlight-text">
+        AllyNest is the home. Everything we build exists to support the human experience — and the evolution within it.
+      </p>
+    </div>
+
+    <!-- Meaning Behind the Name -->
+    <div class="brand-block">
+      <h3>9. Meaning Behind the Name</h3>
+      <div class="brand-subgrid">
+        <div class="brand-card">
+          <h4>Ally</h4>
+          <p>A companion, supporter, someone on your side.</p>
+          <p class="trigger-text">Triggers: trust, reassurance, emotional safety.</p>
+        </div>
+        <div class="brand-card">
+          <h4>Nest</h4>
+          <p>Warmth, protection, rest, belonging.</p>
+          <p class="trigger-text">Triggers: comfort, vulnerability, groundedness.</p>
+        </div>
+      </div>
+      <p>
+        Together they communicate a safe relationship with technology — one that feels human, caring, empowering, and real. A space where connection supports healing, and growth is nurtured gently.
+      </p>
+      <p class="highlight-text">
+        💙 In one sentence: AllyNest is where compassionate intelligence and human connection come together — technology designed not just to work, but to care, support, and help people grow.
+      </p>
+    </div>
+
+    <!-- Ethics & Principles -->
+    <div class="brand-block">
+      <h3>Ethics &amp; Responsibility</h3>
+      <p>
+        To ensure the safety and ethical use of our technology, we prioritize the following principles:
+      </p>
+      <ol class="principles-list">
+        <li>
+          <strong>Privacy Protection:</strong> Systems are designed with robust privacy measures to safeguard personal data and prevent unauthorized access.
+        </li>
+        <li>
+          <strong>Ethical Considerations:</strong> We carefully consider the ethical implications of our technology, ensuring alignment with societal values and respect for human rights.
+        </li>
+        <li>
+          <strong>Transparency:</strong> We are committed to clarity in how our systems operate, how decisions are made, and how data is collected, processed, and used.
+        </li>
+        <li>
+          <strong>Bias Mitigation:</strong> We actively work to identify and reduce biases in our algorithms to support fair, equitable outcomes for all individuals.
+        </li>
+        <li>
+          <strong>Accessibility:</strong> Our technology is designed to be inclusive and accessible, including for individuals with disabilities.
+        </li>
+        <li>
+          <strong>Environmental Responsibility:</strong> We strive to minimize environmental impact from design and development through to deployment and disposal.
+        </li>
+      </ol>
+      <p>
+        By following these principles, we aim to create technology that not only advances AI and computer vision, but also serves the greater good of humanity and the environment. We are dedicated to collaborating with others who share this vision and working towards a future where technology benefits everyone.
+      </p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@AllyNest.com</p>
-    <p>Phone: +91 1234 567890</p>
-    <p>Address: 123 Tech Avenue, Silicon City</p>
+    <p>Email: support@allynesttechnologies.com</p>
+    <p>Phone: +91 93048 14660</p>
+    
   </section>
 
   <!-- Footer -->
@@ -154,27 +314,29 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h3>AllyNest</h3>
-        <p>Innovating the Future of Technology.</p>
+        <p>Innovating the Future of Human-Centered Technology.</p>
       </div>
       <div class="footer-column">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#technologies">Technologies</a></li>
+          
+          <!-- <li><a href="#technologies">Technologies</a></li> -->
+          <li><a href="#brand-guide">Brand Guide</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h4>Contact</h4>
-        <p>Email: contact@AllyNest.com</p>
-        <p>Phone: +91 1234 567890</p>
+        <p>Email: support@allynesttechnologies.com</p>
+        <p>Phone: +91 93048 14660</p>
       </div>
     </div>
     <div class="footer-bottom">
       &copy; 2025 AllyNest. All rights reserved.
     </div>
   </footer>
+
   <script src="allynest.js"></script>
 </body>
 </html>
