@@ -5,7 +5,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+.gradient-text{
+  background:linear-gradient(90deg,#4f46e5,#ec4899);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;

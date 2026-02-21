@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllyNest Technologies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter, sans-serif;
+  background:#f6f8ff;
+  color:#0f172a;
+  line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  position:sticky;top:0;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 56px;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.logo img{
+  height:48px;
+  width:auto;
+  display:block;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:34px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#475569;
+  font-weight:500;
+}
+
+/* ===== HERO ===== */
+.hero{
+  padding:120px 20px 110px;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  background:radial-gradient(circle,#c7d7ff 0%, transparent 70%);
+  top:-120px;left:-120px;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:380px;height:380px;
+  background:radial-gradient(circle,#e0ecff 0%, transparent 70%);
+  bottom:-120px;right:-120px;
+}
+
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:50px;
+  align-items:center;
+  position:relative;
+  z-index:1;
+}
+
+.hero-text h1{
+  font-size:3.1rem;
+  line-height:1.15;
+  margin-bottom:18px;
+}
+
+.gradient-text{
+  background:linear-gradient(90deg,#4f46e5,#ec4899);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+  color:#475569;
+  margin-bottom:28px;
+  font-size:1.12rem;
+  max-width:520px;
+}
+
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#4f46e5,#6366f1);
+  color:#fff;
+  text-decoration:none;
+  padding:14px 32px;
+  border-radius:999px;
+  font-weight:600;
+  box-shadow:0 12px 28px rgba(79,70,229,.25);
+  transition:.25s;
+}
+
+.btn:hover{transform:translateY(-2px)}
+
+.hero-visual img{
+  width:100%;
+  max-width:520px;
+  display:block;
+  margin:auto;
+  border-radius:24px;
+}
+
+/* ===== SECTION ===== */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 22px;
+}
+
+.section h2{
+  color:#1e40af;
+  margin-bottom:16px;
+  font-size:2.2rem;
+  text-align:center;
+}
+
+.section p{
+  color:#475569;
+  text-align:center;
+}
+
+/* ===== EMOTION AI BLOCK ===== */
+.emotion-grid{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:50px;
+  align-items:center;
+}
+
+.emotion-image img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(15,23,42,.12);
+}
+
+.emotion-text h3{
+  font-size:1.6rem;
+  margin-bottom:14px;
+  color:#1e40af;
+}
+
+.emotion-text ul{
+  margin-top:12px;
+  padding-left:18px;
+  color:#475569;
+}
+
+/* ===== PRODUCTS ===== */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:30px;
+}
+
+.product-card{
+  background:#fff;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 14px 34px rgba(15,23,42,.06);
+}
+
+.tag{
+  display:inline-block;
+  font-size:.75rem;
+  background:#eef2ff;
+  color:#4f46e5;
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:linear-gradient(135deg,#1e3a8a,#1e40af,#2563eb);
+  color:#eaf2ff;
+  padding:40px 20px;
+  text-align:center;
+  margin-top:60px;
+}
+
+@media(max-width:768px){
+  .navbar{padding:14px 20px}
+  .hero-text h1{font-size:2.2rem}
+  .logo img{height:40px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="allynest-logo.png" alt="AllyNest Logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <h1>
+        <span class="gradient-text">Emotionally Intelligent</span><br>
+        Technology for Humans
+      </h1>
+      <p>
+        AllyNest builds human-aware AI that understands emotional signals to
+        improve safety, communication, and well-being.
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-visual">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop" alt="AI human connection">
+    </div>
+
+  </div>
+</section>
+
+<!-- EMOTION AI SECTION -->
+<section class="section">
+  <h2>Emotion AI Platform</h2>
+  <p>Technology that understands human emotional signals in real time.</p>
+
+  <div class="emotion-grid">
+
+    <div class="emotion-image">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop" alt="Emotion AI analysis">
+    </div>
+
+    <div class="emotion-text">
+      <h3>Human-Aware Intelligence</h3>
+      <p>
+        Our Emotion AI analyzes multimodal signals to detect emotional states
+        and enable earlier, more responsible intervention.
+      </p>
+
+      <ul>
+        <li>Text emotion detection</li>
+        <li>Voice tone intelligence</li>
+        <li>Facial expression analysis</li>
+        <li>Behavioral risk awareness</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section">
+  <h2>Early Platform Applications</h2>
+
+  <div class="products">
+
+    <div class="product-card">
+      <span class="tag">Social & Relationship AI</span>
+      <h3>Compatifi</h3>
+      <p><strong>Emotionally intelligent compatibility AI.</strong><br>
+      Helps platforms detect tension and support healthier conversations.</p>
+    </div>
+
+    <div class="product-card">
+      <span class="tag">Safety & Monitoring AI</span>
+      <h3>CannyCam</h3>
+      <p><strong>AI-powered behavioral risk detection.</strong><br>
+      Enables earlier safety intervention.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 AllyNest. All rights reserved.
+</footer>
+
+</body>
+</html>
