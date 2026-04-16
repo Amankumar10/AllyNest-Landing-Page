@@ -73,7 +73,12 @@ padding:30px;
 box-shadow:0 10px 25px rgba(0,0,0,0.06);
 transition:0.3s;
 }
-
+.card {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 .product-card:hover{
 transform:translateY(-6px);
 }
